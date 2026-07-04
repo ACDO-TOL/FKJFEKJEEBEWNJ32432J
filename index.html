@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Especial - Origen Orteguno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        details > summary { list-style: none; outline: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary span.icon { transform: rotate(180deg); transition: transform 0.3s; }
+        details summary span.icon { transition: transform 0.3s; }
+        details[open] .contenido-desplegable { animation: aparecer 0.4s ease-out forwards; }
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-[#13171B] text-[#EAD8C7] font-sans min-h-screen flex flex-col items-center p-4">
+
+    <!-- Contenedor Principal Móvil -->
+    <main class="w-full max-w-md bg-[#1B2026] rounded-2xl shadow-2xl border border-[#313943] overflow-hidden my-4 p-5">
+        
+        <!-- Sección del Logo -->
+        <div class="flex justify-center mb-6">
+            <img src="definitivo.jpg" alt="Asociación de Caficultores del Orteguno" class="w-48 h-48 object-contain drop-shadow-lg rounded-full border-2 border-[#C4B29E]">
+        </div>
+
+        <!-- Título Principal -->
+        <header class="text-center mb-6">
+            <h1 class="text-2xl font-bold tracking-wider text-white uppercase">Café Orteguno</h1>
+            <p class="text-sm text-[#C4B29E] italic mt-1">Ortega Tolima - Vereda La Bandera</p>
+            <div class="w-16 h-0.5 bg-[#C4B29E] mx-auto mt-3"></div>
+        </header>
+
+        <!-- Secciones Desplegables (Acordeones) -->
+        <section class="flex flex-col gap-3 mb-8">
+
+            <details class="bg-[#13171B] rounded-xl border border-[#272E37] overflow-hidden group cursor-pointer">
+                <summary class="flex justify-between items-center p-4 font-semibold text-white uppercase text-sm tracking-wider">
+                    <div class="flex items-center gap-3"><span class="text-xl">📍</span> Origen</div>
+                    <span class="icon text-[#C4B29E]">▼</span>
+                </summary>
+                <div class="contenido-desplegable p-4 pt-0 text-sm text-[#D1C2B2] border-t border-[#272E37] mt-2">
+                    <p>Cultivado en el corazón de la <strong>Vereda San Isidro, Ortega, Tolima</strong>. Estas tierras están impregnadas de la herencia indígena Pijao. Sus suelos ricos en nutrientes y el microclima de la región otorgan a nuestro café notas únicas y un carácter inigualable.</p>
+                </div>
+            </details>
+
+            <details class="bg-[#13171B] rounded-xl border border-[#272E37] overflow-hidden group cursor-pointer">
+                <summary class="flex justify-between items-center p-4 font-semibold text-white uppercase text-sm tracking-wider">
+                    <div class="flex items-center gap-3"><span class="text-xl">⛰️</span> Altura</div>
+                    <span class="icon text-[#C4B29E]">▼</span>
+                </summary>
+                <div class="contenido-desplegable p-4 pt-0 text-sm text-[#D1C2B2] border-t border-[#272E37] mt-2">
+                    <p>Cultivado a <strong>1.650 metros sobre el nivel del mar</strong>. A esta altitud, el grano madura más lentamente, lo que permite que desarrolle mayor densidad, azúcares complejos y una acidez brillante y prolongada en taza.</p>
+                </div>
+            </details>
+
+            <details class="bg-[#13171B] rounded-xl border border-[#272E37] overflow-hidden group cursor-pointer">
+                <summary class="flex justify-between items-center p-4 font-semibold text-white uppercase text-sm tracking-wider">
+                    <div class="flex items-center gap-3"><span class="text-xl">🌱</span> Variedad</div>
+                    <span class="icon text-[#C4B29E]">▼</span>
+                </summary>
+                <div class="contenido-desplegable p-4 pt-0 text-sm text-[#D1C2B2] border-t border-[#272E37] mt-2">
+                    <p>Una cuidadosa mezcla de <strong>Caturra y Castillo</strong>. La variedad Caturra aporta dulzor y notas afrutadas, mientras que el Castillo garantiza cuerpo y resistencia en los cultivos, creando un balance perfecto de sabor y sostenibilidad.</p>
+                </div>
+            </details>
+
+            <details class="bg-[#13171B] rounded-xl border border-[#272E37] overflow-hidden group cursor-pointer">
+                <summary class="flex justify-between items-center p-4 font-semibold text-white uppercase text-sm tracking-wider">
+                    <div class="flex items-center gap-3"><span class="text-xl">⚙️</span> Proceso</div>
+                    <span class="icon text-[#C4B29E]">▼</span>
+                </summary>
+                <div class="contenido-desplegable p-4 pt-0 text-sm text-[#D1C2B2] border-t border-[#272E37] mt-2">
+                    <p>Utilizamos un <strong>proceso de Lavado Tradicional</strong>. Los granos reposan durante <strong>24 horas de fermentación en tanque</strong>, un tiempo medido milimétricamente para exaltar las notas florales y mantener una taza extraordinariamente limpia.</p>
+                </div>
+            </details>
+
+            <details class="bg-[#13171B] rounded-xl border border-[#272E37] overflow-hidden group cursor-pointer">
+                <summary class="flex justify-between items-center p-4 font-semibold text-white uppercase text-sm tracking-wider">
+                    <div class="flex items-center gap-3"><span class="text-xl">☀️</span> Secado</div>
+                    <span class="icon text-[#C4B29E]">▼</span>
+                </summary>
+                <div class="contenido-desplegable p-4 pt-0 text-sm text-[#D1C2B2] border-t border-[#272E37] mt-2">
+                    <p>El grano es secado de forma natural <strong>al sol en marquesina</strong>. Este método lento y protegido de la lluvia asegura que la humedad del café disminuya de manera uniforme, prolongando la vida útil del grano verde y estabilizando sus sabores.</p>
+                </div>
+            </details>
+
+            <details class="bg-[#13171B] rounded-xl border border-[#272E37] overflow-hidden group cursor-pointer">
+                <summary class="flex justify-between items-center p-4 font-semibold text-white uppercase text-sm tracking-wider">
+                    <div class="flex items-center gap-3"><span class="text-xl">🏡</span> La Finca</div>
+                    <span class="icon text-[#C4B29E]">▼</span>
+                </summary>
+                <div class="contenido-desplegable p-4 pt-0 text-sm text-[#D1C2B2] border-t border-[#272E37] mt-2">
+                    <p>Cosechado con amor en <strong>Finca El Diviso</strong> (Cosecha Mitaca 2026). Cada grano es recolectado a mano en su punto exacto de maduración por familias caficultoras comprometidas con la calidad artesanal.</p>
+                </div>
+            </details>
+
+        </section>
+
+        <!-- Botón de Contacto Directo y Redes -->
+        <section class="mb-4">
+            
+            <!-- Botón WhatsApp -->
+            <a href="https://wa.me/573219600521?text=Hola,%20me%20interesa%20saber%20más%20sobre%20el%20Café%20Especial%20Orteguno" 
+               target="_blank" 
+               class="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold py-4 px-4 rounded-xl shadow-lg hover:bg-[#20ba59] transition-all text-center">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.296 1.48 4.909 1.481 5.482 0 9.94-4.461 9.943-9.945.002-2.657-1.023-5.155-2.887-7.022C16.75 1.8 14.25 1.777 11.597 1.777c-5.485 0-9.942 4.459-9.945 9.942-.001 1.916.491 3.794 1.424 5.461l-.955 3.486 3.572-.937z"/></svg>
+                Contactar por WhatsApp
+            </a>
+
+            <!-- Fila de Redes Sociales (NUEVO) -->
+            <div class="flex justify-center items-center gap-6 mt-6">
+                <!-- Correo -->
+                <a href="mailto:asocafeterosorte@gmail.com" target="_blank" class="text-[#C4B29E] hover:text-white transition-colors transform hover:scale-110" aria-label="Enviar Correo">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+                
+                <!-- Facebook -->
+                <a href="https://facebook.com/TuPagina" target="_blank" class="text-[#C4B29E] hover:text-[#1877F2] transition-colors transform hover:scale-110" aria-label="Facebook">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                </a>
+                
+                <!-- Telegram -->
+                <a href="https://t.me/TuUsuario" target="_blank" class="text-[#C4B29E] hover:text-[#26A5E4] transition-colors transform hover:scale-110" aria-label="Telegram">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.892-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://tiktok.com/@TuUsuario" target="_blank" class="text-[#C4B29E] hover:text-white transition-colors transform hover:scale-110" aria-label="TikTok">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.96-.5 3.94-1.63 5.46-1.03 1.4-2.57 2.4-4.28 2.8-1.77.41-3.66.36-5.36-.33-1.76-.72-3.2-2.12-4.04-3.8-1.01-2-1.16-4.37-.5-6.47.63-2 2.1-3.7 4-4.57 1.83-.85 3.94-1 5.86-.54V12.2c-1.34-.34-2.8-.2-4.02.44-1.15.58-2.02 1.63-2.4 2.87-.41 1.26-.37 2.7.2 3.9.5 1.05 1.44 1.93 2.57 2.3 1.25.42 2.7.35 3.9-.22 1.06-.5 1.9-1.45 2.2-2.6.28-.97.28-2 .28-3.03V.02h4.15z"/></svg>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center border-t border-[#313943] pt-5 mt-2">
+            <p class="text-xs font-bold text-white uppercase tracking-widest">Asociación de Caficultores del Orteguno</p>
+            <p class="text-[11px] text-[#C4B29E] mt-1">Ortega, Tolima</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
